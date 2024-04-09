@@ -22,9 +22,9 @@ const Compteur = () => {
           <CountUp
             end={345}
             duration={5}
-            className="text-red-600 font-bold text-6xl"
+            className="custom-color font-bold text-6xl"
           />
-          <p className="text-red-600 font-normal">LOREM IPSUM</p>
+          <p className="custom-color font-normal">LOREM IPSUM</p>
         </div>
         <div
           className="flex flex-col justify-center items-center p-10"
@@ -33,9 +33,9 @@ const Compteur = () => {
           <CountUp
             end={1289}
             duration={5}
-            className="text-red-600 font-bold text-6xl"
+            className="custom-color font-bold text-6xl"
           />
-          <p className="text-red-600 font-normal">LOREM IPSUM</p>
+          <p className="custom-color font-normal">LOREM IPSUM</p>
         </div>
         <div
           className="flex flex-col justify-center items-center p-10"
@@ -44,9 +44,9 @@ const Compteur = () => {
           <CountUp
             end={387}
             duration={5}
-            className="text-red-600 font-bold text-6xl"
+            className="custom-color font-bold text-6xl"
           />
-          <p className="text-red-600 font-normal">LOREM IPSUM</p>
+          <p className="custom-color font-normal">LOREM IPSUM</p>
         </div>
         <div
           className="flex flex-col justify-center items-center p-10"
@@ -55,9 +55,9 @@ const Compteur = () => {
           <CountUp
             end={2137}
             duration={5}
-            className="text-red-600 font-bold text-6xl"
+            className="custom-color font-bold text-6xl"
           />
-          <p className="text-red-600 font-normal">LOREM IPSUM</p>
+          <p className="custom-color font-normal">LOREM IPSUM</p>
         </div>
       </div>
     </div>
