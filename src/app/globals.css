@@ -53,10 +53,10 @@ body {
 }
 .img-yacht-noir-blanc, .img-bateau-croisiere-mer{
   background: rgba(0, 0, 0, 0.3);
-  height: 65vh;
+  height: 45vh;
   width: 145vh;
   background-size: cover;
-  background-position: center;
+  background-position: bottom;
   background-blend-mode: darken;
   
 }
