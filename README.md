@@ -13,7 +13,7 @@ CMD npm install : `npm install`
 # Development server
 
 RUN `npm run dev`
-[local](http://localhost:3000/)
+LOCAL :`http://localhost:3000/`
 
 # build
 
