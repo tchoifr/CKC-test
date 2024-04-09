@@ -3,6 +3,7 @@ import BasDePageImg from "@/components/BasDePageImg";
 import Carousel from "@/components/Carousel";
 import Compteur from "@/components/Compteur";
 import DescriptionHeaderText from "@/components/DescriptionHeaderText";
+import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import HommeEquitationBateauMer from "@/components/HommeEquitationBateauMer";
 import ImageSkew from "@/components/ImageSkew";
@@ -23,6 +24,7 @@ const accueil = () => {
       <Carousel />
       <HommeEquitationBateauMer />
       <BasDePageImg />
+      <Footer />
     </div>
   );
 };
