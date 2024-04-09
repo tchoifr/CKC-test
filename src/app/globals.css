@@ -122,6 +122,10 @@ body {
   .padding-mobile-bas-de-page{
     padding: 10px;
   }
+  .responsive-footer{
+    display: flex;
+   flex-direction: column;
+  }
 }
 @media (max-width: 768px) {
  
