@@ -5,7 +5,7 @@ const BanniereCruiseShipOcean = () => {
     <div className="grid grid-cols-3 responsive-banniere-cruise-ship-ocean">
       <div className="flex flex-col justify-center items-start col-span-2 img-cruise-ship-ocean p-10">
         <p className="p-3 custom-color">LOREM IPSUM</p>
-        <h3 className="p-3 font-bold text-5xl ">
+        <h3 className="p-3 font-bold text-5xl text-mobile ">
           Lorem ipsum dolor sit amet, <br /> consectetur adipiscing.
         </h3>
         <p className="p-3">
