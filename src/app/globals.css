@@ -53,6 +53,14 @@ body {
   background-size: cover;
   background-position: center;
   background-blend-mode: darken;
+}
+.img-yacht-noir-blanc, .img-bateau-croisiere-mer{
+  background: rgba(0, 0, 0, 0.3);
+  height: 65vh;
+  width: 145vh;
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: darken;
   
 }
 .img-plongeur, .img-bateau-blanc-ocean, .img-roche-brune-rivage,.img-yacht-blanc-eau-calme{
@@ -87,6 +95,12 @@ body {
 .img-Bateau-blanc-et-bleu{
   background-image: url(/Bateau-blanc-et-bleu.webp);
 }
+.img-bateau-croisiere-mer{
+  background-image: url(/Bateau-croisiere-mer.webp);
+}
+.img-yacht-noir-blanc{
+  background-image: url(/Photo-Yacht-Noir-Blanc.webp);
+}
 .img-cruise-ship-ocean{
   background-image: url(/Cruise-ship-ocean.webp);
   background-position: top;
@@ -94,6 +108,7 @@ body {
   min-height: 450px;
   
 }
+
 
 .section-search{
   width: 55%;
