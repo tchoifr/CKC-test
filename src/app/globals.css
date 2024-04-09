@@ -55,25 +55,30 @@ body {
   background-blend-mode: darken;
   
 }
-.img-plongeur{
-  background-image: url(/Plongeur-dans-l_eau.webp);
+.img-plongeur, .img-bateau-blanc-ocean, .img-roche-brune-rivage,.img-yacht-blanc-eau-calme {
   background-position: center;
   background-size: cover;
   min-height: 450px;
- 
+}
+.img-plongeur{
+  background-image: url(/Plongeur-dans-l_eau.webp);
 }
 .img-bateau-blanc-ocean{
   background-image: url(/Bateaux-blancs-ocean.webp);
-  background-position: center;
-  background-size: cover;
-  min-height: 450px;
 }
 .img-roche-brune-rivage{
   background-image: url(/Roches-brunes-rivage.webp);
-  background-position: center;
+}
+.img-yacht-blanc-eau-calme{
+  background-image: url(/Yacht-blanc-eaux-calmes.webp);
+}
+.img-cruise-ship-ocean{
+  background-image: url(/Cruise-ship-ocean.webp);
+  background-position: top;
   background-size: cover;
   min-height: 450px;
 }
+
 .section-search{
   width: 55%;
 }
@@ -105,7 +110,7 @@ body {
     font-size: 2rem;
   }
  
-.responsive-image-skew{
+.responsive-image-skew, .responsive-banniere-cruise-ship-ocean{
   display: flex;
   flex-direction: column;
 }

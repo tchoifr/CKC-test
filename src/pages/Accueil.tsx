@@ -1,3 +1,4 @@
+import BanniereCruiseShipOcean from "@/components/BanniereCruiseShipOcean";
 import Compteur from "@/components/Compteur";
 import DescriptionHeaderText from "@/components/DescriptionHeaderText";
 import Header from "@/components/Header";
@@ -15,6 +16,7 @@ const accueil = () => {
       <DescriptionHeaderText />
       <ImageSkew />
       <Compteur />
+      <BanniereCruiseShipOcean />
     </div>
   );
 };
