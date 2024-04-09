@@ -21,8 +21,10 @@ const accueil = () => {
       <ImageSkew />
       <Compteur />
       <BanniereCruiseShipOcean />
-      <Carousel />
-      <HommeEquitationBateauMer />
+      <div className="flex flex-col">
+        <Carousel />
+        <HommeEquitationBateauMer />
+      </div>
       <BasDePageImg />
       <Footer />
     </div>

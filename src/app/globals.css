@@ -21,11 +21,8 @@
 body {
   background-color: white; /* Couleur de fond de base en blanc */
   color: rgb(var(--foreground-rgb)); /* Couleur de texte */
-  background-image: linear-gradient(
-    to bottom,
-    transparent,
-    rgb(var(--background-end-rgb))
-  ); /* Dégradé linéaire */
+  
+   /* Dégradé linéaire */
 }
 
 @layer utilities {

@@ -3,7 +3,7 @@ import React from "react";
 const HommeEquitationBateauMer = () => {
   return (
     <div
-      className="grid grid-cols-3 responsive-homme_equitation-bateau-mer"
+      className="grid grid-cols-3 responsive-homme_equitation-bateau-mer p-10"
       style={{ backgroundColor: "#F5F5FA" }}
     >
       <div className="img-Homme-equitation-bateau-mer flex flex-col justify-end p-5">
