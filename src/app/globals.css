@@ -19,13 +19,13 @@
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  background-color: white; /* Couleur de fond de base en blanc */
+  color: rgb(var(--foreground-rgb)); /* Couleur de texte */
+  background-image: linear-gradient(
+    to bottom,
+    transparent,
+    rgb(var(--background-end-rgb))
+  ); /* Dégradé linéaire */
 }
 
 @layer utilities {
@@ -47,13 +47,32 @@ body {
   font-size: 3rem;
 }
 .img-header{
-  background: rgba(0, 0, 0, 0.3) url(/_next/static/media/Bateau-sur-plan-deau.646eba8e.webp);
+  background: rgba(0, 0, 0, 0.3) url(/Bateau-sur-plan-deau.webp);
   height: 93vh;
   width: 100%;
   background-size: cover;
   background-position: center;
   background-blend-mode: darken;
   
+}
+.img-plongeur{
+  background-image: url(/Plongeur-dans-l_eau.webp);
+  background-position: center;
+  background-size: cover;
+  min-height: 450px;
+ 
+}
+.img-bateau-blanc-ocean{
+  background-image: url(/Bateaux-blancs-ocean.webp);
+  background-position: center;
+  background-size: cover;
+  min-height: 450px;
+}
+.img-roche-brune-rivage{
+  background-image: url(/Roches-brunes-rivage.webp);
+  background-position: center;
+  background-size: cover;
+  min-height: 450px;
 }
 .section-search{
   width: 55%;
@@ -71,19 +90,24 @@ body {
   .section-search{
     width: 80%;
   }
+  .img-header {
+    height: 170vh;
 }
-@media (max-width: 768px) {
   .responsive-container-search {
     display: flex;
     flex-direction: column;
     justify-content: center;
   }
-
+}
+@media (max-width: 768px) {
+  
   .search-h1{
     font-size: 2rem;
   }
-  .img-header {
-    height: 170vh;
+ 
+.responsive-image-skew{
+  display: flex;
+  flex-direction: column;
 }
 }
 @media (max-width: 425px) {
