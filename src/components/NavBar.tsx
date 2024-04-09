@@ -47,6 +47,7 @@ const Navbar = () => {
               height={30}
               priority
               style={{ height: "auto" }}
+              className="logo-mobile"
             />
           </a>
         </h1>
