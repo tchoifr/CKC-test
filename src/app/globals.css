@@ -60,6 +60,12 @@ body {
   background-size: cover;
   min-height: 450px;
 }
+.img-Bateaux-blancs-ocean,.img-Homme-equitation-bateau-mer{
+  margin: 25px;
+  background-position: center;
+  background-size: cover;
+  min-height: 400px;
+}
 .img-plongeur{
   background-image: url(/Plongeur-dans-l_eau.webp);
 }
@@ -72,11 +78,18 @@ body {
 .img-yacht-blanc-eau-calme{
   background-image: url(/Yacht-blanc-eaux-calmes.webp);
 }
+.img-Bateaux-blancs-ocean{
+  background-image: url(/Bateaux-blancs-ocean.webp);
+}
+.img-Homme-equitation-bateau-mer{
+  background-image: url(/Homme-equitation-bateau-mer.webp);
+}
 .img-cruise-ship-ocean{
   background-image: url(/Cruise-ship-ocean.webp);
   background-position: top;
   background-size: cover;
   min-height: 450px;
+  
 }
 
 .section-search{
@@ -110,13 +123,18 @@ body {
     font-size: 2rem;
   }
  
-.responsive-image-skew, .responsive-banniere-cruise-ship-ocean{
+.responsive-image-skew, .responsive-banniere-cruise-ship-ocean, .responsive-homme_equitation-bateau-mer{
   display: flex;
   flex-direction: column;
 }
 }
 @media (max-width: 425px) {
-
+.text-mobile{
+  font-size: 2.5rem;
+}
+.logo-mobile{
+width: 140px;
+}
   .search-h1{
     font-size: 1.5rem;
     margin-top: 50px;
