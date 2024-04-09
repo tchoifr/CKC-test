@@ -46,7 +46,7 @@ body {
 .search-h1{
   font-size: 3rem;
 }
-.img-header{
+.img-header , .img-Bateau-blanc-et-bleu{
   background: rgba(0, 0, 0, 0.3) url(/Bateau-sur-plan-deau.webp);
   height: 93vh;
   width: 100%;
@@ -55,7 +55,7 @@ body {
   background-blend-mode: darken;
   
 }
-.img-plongeur, .img-bateau-blanc-ocean, .img-roche-brune-rivage,.img-yacht-blanc-eau-calme {
+.img-plongeur, .img-bateau-blanc-ocean, .img-roche-brune-rivage,.img-yacht-blanc-eau-calme{
   background-position: center;
   background-size: cover;
   min-height: 450px;
@@ -83,6 +83,9 @@ body {
 }
 .img-Homme-equitation-bateau-mer{
   background-image: url(/Homme-equitation-bateau-mer.webp);
+}
+.img-Bateau-blanc-et-bleu{
+  background-image: url(/Bateau-blanc-et-bleu.webp);
 }
 .img-cruise-ship-ocean{
   background-image: url(/Cruise-ship-ocean.webp);

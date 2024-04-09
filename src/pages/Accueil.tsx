@@ -1,4 +1,5 @@
 import BanniereCruiseShipOcean from "@/components/BanniereCruiseShipOcean";
+import BasDePageImg from "@/components/BasDePageImg";
 import Carousel from "@/components/Carousel";
 import Compteur from "@/components/Compteur";
 import DescriptionHeaderText from "@/components/DescriptionHeaderText";
@@ -21,6 +22,7 @@ const accueil = () => {
       <BanniereCruiseShipOcean />
       <Carousel />
       <HommeEquitationBateauMer />
+      <BasDePageImg />
     </div>
   );
 };
