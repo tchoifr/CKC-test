@@ -118,10 +118,13 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
+  } 
+  .padding-mobile-bas-de-page{
+    padding: 10px;
   }
 }
 @media (max-width: 768px) {
-  
+ 
   .search-h1{
     font-size: 2rem;
   }
