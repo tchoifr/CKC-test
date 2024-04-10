@@ -45,7 +45,7 @@ body {
 }
 .img-header , .img-Bateau-blanc-et-bleu{
   background: rgba(0, 0, 0, 0.3) url(/Bateau-sur-plan-deau.webp);
-  height: 93vh;
+  height: 85vh;
   width: 100%;
   background-size: cover;
   background-position: center;
@@ -138,7 +138,7 @@ body {
   min-width: 500px;
 }
 .section-search{
-  width: 55%;
+  width:1065px;
 }
 .color-btn-en{
   background-color: #ffffff2e;
@@ -147,10 +147,17 @@ body {
   height: 450px;
   overflow: hidden;
 }
+.input-text {
+  color: black; 
+}
+.rensponsive-text-bloc-equitation-bateau-mer{
+  padding-left: 15%;
+
+}
 /* Media query pour les écrans de taille maximale */
 @media (max-width: 1440px){
   .section-search{
-    width: 60%;
+    width: 82%;
   }
 }
 @media (max-width: 1024px){
@@ -209,8 +216,18 @@ body {
   margin: 0px;
 margin-top: 10px;
 }
+.rensponsive-text-bloc-equitation-bateau-mer{
+  padding-left: 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 }
 @media (max-width: 425px) {
+  .size-number{
+    font-size: 1.5rem;
+  }
 .text-mobile{
   font-size: 2.5rem;
 }
@@ -227,5 +244,8 @@ width: 140px;
 }
   .mobile-header-img{
     height: 300px;
+  }
+  .responsive-align-center{
+    text-align: center;
   }
 }

@@ -9,16 +9,9 @@ const Search = () => {
   const [priceRange, setPriceRange] = useState<number[]>([0, 1300000]); // Plage de prix initiale
   const [yearRange, setYearRange] = useState<number[]>([1900, 2022]); // Plage d'années initiale
   const [areaRange, setAreaRange] = useState<number[]>([0, 1000]); // Plage de superficie initiale
-
+  const [selectedBtn, setSelectedBtn] = useState(0);
   const handleSearch = () => {
     // Logique de recherche ici en utilisant searchTerm, priceRange, yearRange, et areaRange
-    console.log(
-      "Recherche effectuée",
-      searchTerm,
-      priceRange,
-      yearRange,
-      areaRange
-    );
   };
 
   const handlePriceChange = (value: number[] | number) => {
@@ -38,31 +31,27 @@ const Search = () => {
       setAreaRange(value);
     }
   };
-
+  const handleButtonClick = (index: any) => {
+    setSelectedBtn(index);
+  };
   return (
     <div className="section-search">
       <h1 className="search-h1 text-white p-2 font-normal text-medium text-3xl md:text-4xl lg:text-5xl leading-60 font-poppins tracking-wide">
         Lorem ipsum dolor sit amet, consectetur adipiscing.{" "}
       </h1>
       <div className="flex flex-wrap">
-        <button
-          className="text-black w-182 h-57 bg-white border border-custom-color hover:bg-custom-color active:bg-custom-color"
-          style={{ padding: "5px 20px" }}
-        >
-          LOREM IPSUM
-        </button>
-        <button
-          className="text-black w-182 h-57 bg-white border border-custom-color hover:bg-custom-color active:bg-custom-color"
-          style={{ padding: "5px 20px" }}
-        >
-          LOREM IPSUM
-        </button>
-        <button
-          className="text-black w-182 h-57 bg-white border border-custom-color hover:bg-custom-color active:bg-custom-color"
-          style={{ padding: "5px 20px" }}
-        >
-          LOREM IPSUM
-        </button>
+        {[0, 1, 2].map((index) => (
+          <button
+            key={index}
+            className={`text-black w-182 h-57 bg-white border-custom-color hover:bg-custom-color active:bg-custom-color ${
+              selectedBtn === index ? "bg-custom-color" : ""
+            }`}
+            style={{ padding: "5px 20px" }}
+            onClick={() => handleButtonClick(index)}
+          >
+            LOREM IPSUM
+          </button>
+        ))}
       </div>
 
       <div className="flex bg-white responsive-container-search justify-around">
@@ -73,28 +62,8 @@ const Search = () => {
             placeholder="Rechercher par nom"
             value={searchTerm}
             onChange={(e) => setSearchTerm(e.target.value)}
-            className="border border-gray-300 px-3 py-2 rounded-md"
+            className="border border-gray-300 px-3 py-2 rounded-md input-text"
           />
-        </div>
-        <div className="p-4 flex flex-col w-full">
-          <p className="text-black font-bold">Tarifs</p>
-          <Slider
-            min={0}
-            max={1300000}
-            range
-            value={priceRange}
-            onChange={handlePriceChange}
-            trackStyle={{ backgroundColor: "#EA516F" }}
-            handleStyle={{
-              border: "solid 2px #EA516F",
-              backgroundColor: "#EA516F",
-              opacity: 1,
-            }}
-          />
-          <div className="flex justify-between">
-            <span className="pr-4 text-black">{priceRange[0]}€</span>
-            <span className="pl-4 text-black">{priceRange[1]}€</span>
-          </div>
         </div>
         <div className="p-4 flex flex-col w-full">
           <p className="text-black font-bold">Années</p>
@@ -117,6 +86,27 @@ const Search = () => {
           </div>
         </div>
         <div className="p-4 flex flex-col w-full">
+          <p className="text-black font-bold">Tarifs</p>
+          <Slider
+            min={0}
+            max={1300000}
+            range
+            value={priceRange}
+            onChange={handlePriceChange}
+            trackStyle={{ backgroundColor: "#EA516F" }}
+            handleStyle={{
+              border: "solid 2px #EA516F",
+              backgroundColor: "#EA516F",
+              opacity: 1,
+            }}
+          />
+          <div className="flex justify-between">
+            <span className="pr-4 text-black">{priceRange[0]}€</span>
+            <span className="pl-4 text-black">{priceRange[1]}€</span>
+          </div>
+        </div>
+
+        <div className="p-4 flex flex-col w-full">
           <p className="text-black font-bold">Superficie</p>
           <Slider
             min={0}
@@ -138,7 +128,8 @@ const Search = () => {
         </div>
         <div className="p-4 flex justify-center items-center">
           <button
-            className="text-white w-182 bg-custom-color flex items-center justify-center p-5"
+            className="text-white w-182 bg-custom-color flex items-center justify-center "
+            style={{ padding: "20px 30px 20px 30px" }}
             onClick={handleSearch}
           >
             <FaSearch style={{ fontSize: "1.2em" }} />

@@ -4,8 +4,8 @@ import { FaFacebook, FaInstagram, FaYoutube } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <div className="bg-white grid grid-cols-4  text-black p-10 responsive-footer ">
-      <div className="flex flex-col justify-center items-center">
+    <div className="bg-white text-black p-10 responsive-footer flex justify-around ">
+      <div className="flex flex-col items-center justify-center responsive-align-center">
         <Image
           src="/logo-ckc-net.svg"
           alt="Vercel Logo"
@@ -13,33 +13,33 @@ const Footer = () => {
           height={30}
           priority
           style={{ height: "auto" }}
-          className="logo-mobile pb-3"
+          className="logo-mobile "
         />
         <p className="pb-5 pt-5">
           Lorem ipsum dolor sit amet, consectetur adipiscing.
         </p>
-        <p className=" custom-color text-3xl">+33 1 01 02 03 04</p>
+        <p className=" custom-color text-3xl size-number">+33 1 01 02 03 04</p>
       </div>
-      <div className="flex flex-col justify-center items-center">
-        <p className="pb-3 custom-color">LOREM IPSUM</p>
+      <div className="flex flex-col items-start responsive-footer-bloc">
+        <p className=" custom-color pb-3">LOREM IPSUM</p>
         <p>Lorem ipsum 1 </p>
         <p>Lorem ipsum 2</p>
-        <p className="pb-3">Lorem ipsum 3</p>
-        <p className="pb-3 custom-color">JOIN US ON SOCIAL MEDIA</p>
+        <p className="">Lorem ipsum 3</p>
+        <p className=" custom-color pt-5">JOIN US ON SOCIAL MEDIA</p>
         <div className="flex">
-          <div className="p-3">
+          <div className="p-2">
             <FaFacebook className="w-8 h-8 text-gray-500" />
           </div>
-          <div className="p-3">
+          <div className="p-2">
             <FaInstagram className="w-8 h-8 text-gray-500" />
           </div>
-          <div className="p-3">
+          <div className="p-2">
             <FaYoutube className="w-8 h-8 text-gray-500" />
           </div>
         </div>
       </div>
-      <div className="flex flex-col justify-center items-center">
-        <p className="pb-3 custom-color">LOREM IPSUM</p>
+      <div className="flex flex-col items-start responsive-footer-bloc">
+        <p className=" custom-color pb-3">LOREM IPSUM</p>
         <p>Lorem ipsum 1 </p>
         <p>Lorem ipsum 2</p>
         <p>Lorem ipsum 3</p>
@@ -47,9 +47,9 @@ const Footer = () => {
         <p>Lorem ipsum 5</p>
         <p>Lorem ipsum 6</p>
       </div>
-      <div className="flex flex-col justify-center items-start">
-        <p className="pb-4 custom-color">LOREM IPSUM</p>
-        <p className="pb-4">
+      <div className="flex flex-col items-start responsive-footer-bloc">
+        <p className="custom-color pb-3">LOREM IPSUM</p>
+        <p className="pb-4 responsive-align-center">
           Lorem ipsum dolor sit amet, consectetur adipiscing.
         </p>
         <button
@@ -58,7 +58,12 @@ const Footer = () => {
         >
           LOREM IPSUM
         </button>
-        <p className="pt-5">© Copyright 2024, crafted by ckc-net.com</p>
+        <p
+          className=" pt-16 responsive-align-center"
+          style={{ color: "#022D45", fontSize: "15px" }}
+        >
+          © Copyright 2024, crafted by ckc-net.com
+        </p>
       </div>
     </div>
   );

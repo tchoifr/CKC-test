@@ -18,13 +18,13 @@ const HommeEquitationBateauMer = () => {
           Lorem ipsum dolor sit amet, consectetur adipiscing elit.
         </h4>
       </div>
-      <div className="flex flex-col justify-center items-start">
+      <div className="flex flex-col justify-center items-start rensponsive-text-bloc-equitation-bateau-mer">
         <p className="custom-color p-3">LOREM IPSUM</p>
         <h3
           className="font-bold text-5xl p-3 text-mobile"
           style={{ color: "#022D45" }}
         >
-          Lorem ipsum dolor sit amet
+          Lorem ipsum <br /> dolor sit amet
         </h3>
         <button
           className="text-white w-182 h-57 bg-custom-color p-3"
