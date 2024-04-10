@@ -217,8 +217,29 @@ h1, h2, h3 {
 .shadow-carousel{
   box-shadow: 20px 20px 40px #0000000D;
 }
+.skew-img-middle{
+transform: skew(-15deg) translate(-50%, 0px);
+position: absolute;
+left: 50%;
+width: 29%;
+}
+.skew-img{
+  
+  width: 40%;
+  }
 /* Media query pour les écrans de taille maximale */
 @media (max-width: 1440px){
+  .skew-img-middle{
+    transform:none;
+    position: static;
+    width: 100%;
+    }
+      .skew-img{
+  
+        width: 100%;
+        }
+           
+
   .section-search{
     width: 82%;
   }
