@@ -42,7 +42,7 @@ const HommeEquitationBateauMer = () => {
           Lorem ipsum <br /> dolor sit amet
         </h3>
         <button
-          className="text-white bg-custom-color survol-btn-black"
+          className="text-white bg-custom-color survol-btn-black mt-5"
           style={{ padding: "15px 50px", minWidth: "220px", minHeight: "60px" }}
           onClick={handleButtonClick}
           onMouseEnter={handleButtonMouseEnter}
