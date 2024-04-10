@@ -36,7 +36,7 @@ const Search = () => {
   };
   return (
     <div className="section-search">
-      <h1 className="search-h1 text-white p-2 text-medium text-3xl md:text-4xl lg:text-5xl pb-10 font-medium">
+      <h1 className="search-h1 text-white p-2 text-medium text-3xl md:text-4xl lg:text-5xl pb-14 font-medium">
         Lorem ipsum dolor sit amet, consectetur adipiscing.{" "}
       </h1>
       <div className="flex flex-wrap">

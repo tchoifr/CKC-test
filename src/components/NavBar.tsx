@@ -1,4 +1,5 @@
 "use client";
+
 import Image from "next/image";
 import Link from "next/link";
 import React, { useState } from "react";
@@ -6,6 +7,19 @@ import { FaBars, FaTimes } from "react-icons/fa";
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
+  const [buttonText, setButtonText] = useState("LOREM IPSUM");
+
+  const handleButtonClick = () => {
+    setButtonText("REGISTER NOW");
+  };
+
+  const handleButtonMouseEnter = () => {
+    setButtonText("REGISTER NOW");
+  };
+
+  const handleButtonMouseLeave = () => {
+    setButtonText("LOREM IPSUM");
+  };
 
   const links = [
     {
@@ -77,10 +91,13 @@ const Navbar = () => {
             EN
           </button>
           <button
-            className="text-white w-182 h-57 bg-custom-color survol-btn"
-            style={{ padding: "15px 50px" }}
+            className="text-white bg-custom-color survol-btn"
+            style={{ padding: "15px 50px", minWidth: "220px" }}
+            onClick={handleButtonClick}
+            onMouseEnter={handleButtonMouseEnter}
+            onMouseLeave={handleButtonMouseLeave}
           >
-            LOREM IPSUM
+            {buttonText}
           </button>
         </div>
       </li>
@@ -92,7 +109,10 @@ const Navbar = () => {
       </div>
 
       {nav && (
-        <ul className="flex flex-col justify-center items-center absolute top-0 left-0 w-full h-screen bg-gradient-to-b from-black to-gray-800 text-gray-500">
+        <ul
+          className="flex flex-col justify-center items-center absolute top-0 left-0 w-full bg-gradient-to-b from-black to-gray-800 text-gray-500"
+          style={{ height: "150vh" }}
+        >
           {links.map(({ id, link }) => (
             <li
               key={id}
@@ -113,10 +133,13 @@ const Navbar = () => {
               EN
             </button>
             <button
-              className="text-white w-182 h-57 bg-custom-color survol-btn"
-              style={{ padding: "15px 50px" }}
+              className="text-white bg-custom-color survol-btn"
+              style={{ padding: "15px 50px", minWidth: "220px" }}
+              onClick={handleButtonClick}
+              onMouseEnter={handleButtonMouseEnter}
+              onMouseLeave={handleButtonMouseLeave}
             >
-              LOREM IPSUM
+              {buttonText}
             </button>
           </div>
         </ul>

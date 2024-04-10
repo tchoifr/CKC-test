@@ -1,6 +1,21 @@
-import React from "react";
+"use client";
+import React, { useState } from "react";
 
 const HommeEquitationBateauMer = () => {
+  const [buttonText, setButtonText] = useState("LOREM IPSUM");
+
+  const handleButtonClick = () => {
+    setButtonText("REGISTER NOW");
+  };
+
+  const handleButtonMouseEnter = () => {
+    setButtonText("REGISTER NOW");
+  };
+
+  const handleButtonMouseLeave = () => {
+    setButtonText("LOREM IPSUM");
+  };
+
   return (
     <div
       className="grid grid-cols-3 responsive-homme_equitation-bateau-mer p-10"
@@ -8,13 +23,13 @@ const HommeEquitationBateauMer = () => {
     >
       <div className="img-Homme-equitation-bateau-mer flex flex-col justify-end p-5">
         <p className="custom-color">POSTED 10 MARCH 2023</p>
-        <h4 className="font-bold text-white">
+        <h4 className="font-medium text-white">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit.
         </h4>
       </div>
       <div className="img-Bateaux-blancs-ocean flex flex-col justify-end p-5">
         <p className="custom-color">POSTED 10 MARCH 2023</p>
-        <h4 className="font-bold text-white ">
+        <h4 className="font-medium text-white ">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit.
         </h4>
       </div>
@@ -27,10 +42,13 @@ const HommeEquitationBateauMer = () => {
           Lorem ipsum <br /> dolor sit amet
         </h3>
         <button
-          className="text-white w-182 h-57 bg-custom-color p-3 survol-btn-black"
-          style={{ padding: "15px 50px", marginLeft: "10px" }}
+          className="text-white bg-custom-color survol-btn-black"
+          style={{ padding: "15px 50px", minWidth: "220px" }}
+          onClick={handleButtonClick}
+          onMouseEnter={handleButtonMouseEnter}
+          onMouseLeave={handleButtonMouseLeave}
         >
-          LOREM IPSUM
+          {buttonText}
         </button>
       </div>
     </div>

@@ -23,12 +23,12 @@ const Carousel = () => {
           Lorem ipsum dolor sit amet
         </h3>
         <div className="flex">
-          <div className="bg-white p-3 m-3 mr-6">
+          <div className="bg-white p-3 m-3 mr-6 shadow-carousel">
             <button className="text-3xl text-gray-500" onClick={handlePrevious}>
               &#8592;
             </button>
           </div>
-          <div className="bg-white p-3 m-3 ml-6">
+          <div className="bg-white p-3 m-3 ml-6 shadow-carousel">
             <button className="text-3xl text-gray-500" onClick={handleNext}>
               &#8594;
             </button>
@@ -42,7 +42,7 @@ const Carousel = () => {
           }`}
         >
           <div className="text-container">
-            <h3 className="font-bold text-3xl text-white">Lorem ipsum</h3>
+            <h3 className="font-medium text-3xl text-white">Lorem ipsum</h3>
             <p className="text-white">Lorem ipsum | Lorem ipsum | 2018</p>
             <div className="flex">
               <p className="p-1 text-white">From</p>
@@ -58,7 +58,7 @@ const Carousel = () => {
           }`}
         >
           <div className="text-container">
-            <h3 className="font-bold text-3xl text-white">Lorem ipsum</h3>
+            <h3 className="font-medium text-3xl text-white">Lorem ipsum</h3>
             <p className="text-white">Lorem ipsum | Lorem ipsum | 2018</p>
             <div className="flex">
               <p className="p-1 text-white">From</p>

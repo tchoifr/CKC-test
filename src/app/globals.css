@@ -1,6 +1,11 @@
+/* Importation des styles de base de Tailwind */
 @tailwind base;
+/* Importation des composants de Tailwind */
 @tailwind components;
+/* Importation des utilitaires de Tailwind */
 @tailwind utilities;
+
+/* Définition des polices personnalisées */
 @font-face {
   font-family: Poppins;
   src: url("/assets/font/Poppins/Poppins-Medium.ttf");
@@ -19,70 +24,68 @@
   font-weight: normal;
   font-style: normal;
 }
-:root {
-  --foreground-rgb: rgb(255, 255, 255);
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-  --custom-color: #EA516F; 
 
+/* Définition des variables de couleur */
+:root {
+  --foreground-rgb: rgb(255, 255, 255); /* Couleur du texte */
+  --background-start-rgb: 214, 219, 220; /* Dégradé de couleur de fond - début */
+  --background-end-rgb: 255, 255, 255; /* Dégradé de couleur de fond - fin */
+  --custom-color: #EA516F; /* Couleur personnalisée */
 }
+
+/* Styles de base pour le corps de la page */
 body {
   background-color: white; /* Couleur de fond de base en blanc */
   color: rgb(var(--foreground-rgb)); /* Couleur de texte */
-  font-family: "Poppins", sans-serif;
+  font-family: "Poppins", sans-serif; /* Police par défaut */
 }
-p{
+
+/* Ajustements de la lettre pour les paragraphes et les titres */
+p {
   letter-spacing: -1px;
 }
-h1,h2,h3,h4{
+h1, h2, h3 {
   letter-spacing: -2px;
 }
+
+/* Définition de nouvelles classes utilitaires */
 @layer utilities {
+  /* Texte ajusté */
   .text-balance {
     text-wrap: balance;
   }
-   /* Couleur personnalisée */
-   .custom-color {
+  /* Couleur personnalisée */
+  .custom-color {
     color: var(--custom-color);
   }
-  
   /* Couleur de fond personnalisée */
   .bg-custom-color {
     background-color: var(--custom-color);
   }
 }
-
+.text-container {
+  position: relative;
+  z-index: 1; 
+}
 .search-h1{
   font-size: 3rem;
 }
-.img-header , .img-Bateau-blanc-et-bleu{
-  background: rgba(0, 0, 0, 0.3) url(/assets/images/Bateau-sur-plan-deau.webp);
-  height: 85vh;
-  width: 100%;
-  background-size: cover;
-  background-position: center;
-  background-blend-mode: darken;
-}
+
 .img-yacht-noir-blanc, .img-bateau-croisiere-mer{
   background: rgba(0, 0, 0, 0.3);
-  height: 45vh;
-  width: 145vh;
   background-size: cover;
   background-position: bottom;
   background-blend-mode: darken;
 }
-.text-container {
-  position: relative;
-  z-index: 1; /* Assure que le texte est au-dessus de l'image */
-}
+
 .img-yacht-noir-blanc::before, .img-bateau-croisiere-mer::before {
   content: "";
   position: absolute;
   bottom: 0;
   left: 0;
   width: 100%;
-  height: 50%;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.3) 50%, rgba(0, 0, 0, 0.5) 100%);
+  height: 100%;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.1) 55%, rgba(2, 45,69, 2) 95%);
 }
 
 .img-yacht-noir-blanc, .img-bateau-croisiere-mer {
@@ -106,13 +109,14 @@ h1,h2,h3,h4{
   background-blend-mode: darken;
   min-height: 450px;
 }
-.img-Bateaux-blancs-ocean,.img-Homme-equitation-bateau-mer{
-  margin: 25px;
-  background-position: center;
+.img-header {
+  background: rgba(2, 45,69, 0.5) url(/assets/images/Bateau-sur-plan-deau.webp);
+  height: 85vh;
+  width: 100%;
   background-size: cover;
-  min-height: 400px;
+  background-position: center;
+  background-blend-mode: darken;
 }
-
 .img-plongeur{
   background: rgba(2, 45,69, 0.5) url(/assets/images/Plongeur-dans-l_eau.webp);
   background-blend-mode: darken;
@@ -138,13 +142,28 @@ h1,h2,h3,h4{
   background-image: url(/assets/images/Yacht-blanc-eaux-calmes.webp);
 }
 .img-Bateaux-blancs-ocean{
-  background-image: url(/assets/images/Bateaux-blancs-ocean.webp);
+  background: rgba(2, 45,69, 0.5)url(/assets/images/Bateaux-blancs-ocean.webp);
+  margin: 25px;
+  background-position: center;
+  background-blend-mode: darken;
+  background-size: cover;
+  min-height: 400px;
 }
 .img-Homme-equitation-bateau-mer{
-  background-image: url(/assets/images/Homme-equitation-bateau-mer.webp);
+  background: rgba(2, 45,69, 0.5) url(/assets/images/Homme-equitation-bateau-mer.webp);
+  margin: 25px;
+  background-position: center;
+  background-blend-mode: darken;
+  background-size: cover;
+  min-height: 400px;
 }
 .img-Bateau-blanc-et-bleu{
-  background-image: url(/assets/images/Bateau-blanc-et-bleu.webp);
+  background:rgba(2, 45,69, 0.5) url(/assets/images/Bateau-blanc-et-bleu.webp);
+  height: 85vh;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: darken;
 }
 .img-bateau-croisiere-mer{
   background-image: url(/assets/images/Bateau-croisiere-mer.webp);
@@ -189,8 +208,14 @@ h1,h2,h3,h4{
   color: black;
   border: 1px solid black;
 }
+.survol-btn-footer-contact:hover{
+  background-color: #0D6291;
+}
 .responsive-container-search{
   padding: 0px 20px;
+}
+.shadow-carousel{
+  box-shadow: 20px 20px 40px #0000000D;
 }
 /* Media query pour les écrans de taille maximale */
 @media (max-width: 1440px){
@@ -232,8 +257,7 @@ h1,h2,h3,h4{
 }
 @media (max-width: 768px) {
   .img-yacht-noir-blanc, .img-bateau-croisiere-mer {
-    height: 50vh;
-    width: 100%;
+   
     position: relative;
     overflow: hidden;
     min-height: 50vh;
