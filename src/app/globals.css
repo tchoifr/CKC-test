@@ -58,8 +58,37 @@ body {
   background-size: cover;
   background-position: bottom;
   background-blend-mode: darken;
-  
 }
+.text-container {
+  position: relative;
+  z-index: 1; /* Assure que le texte est au-dessus de l'image */
+}
+.img-yacht-noir-blanc::before, .img-bateau-croisiere-mer::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 50%;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.3) 50%, rgba(0, 0, 0, 0.5) 100%);
+}
+
+.img-yacht-noir-blanc, .img-bateau-croisiere-mer {
+  height: 50vh;
+  width: 100vh;
+  position: relative;
+  overflow: hidden;
+  min-height: 50vh;
+  min-width: 100vh;
+}
+
+.img-yacht-noir-blanc img, .img-bateau-croisiere-mer img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+
 .img-plongeur, .img-bateau-blanc-ocean, .img-roche-brune-rivage,.img-yacht-blanc-eau-calme{
   background-position: center;
   background-size: cover;
@@ -99,19 +128,24 @@ body {
   background-image: url(/Photo-Yacht-Noir-Blanc.webp);
 }
 .img-cruise-ship-ocean{
-  background-image: url(/Cruise-ship-ocean.webp);
-  background-position: top;
+  background: rgba(0, 0, 0, 0.3) url(/Cruise-ship-ocean.webp);
+  background-position: center;
   background-size: cover;
-  min-height: 450px;
-  
+  background-blend-mode: darken;
 }
 
-
+.responsive-carousel-bloc-text{
+  min-width: 500px;
+}
 .section-search{
   width: 55%;
 }
 .color-btn-en{
   background-color: #ffffff2e;
+}
+.responsive-carousel{
+  height: 450px;
+  overflow: hidden;
 }
 /* Media query pour les écrans de taille maximale */
 @media (max-width: 1440px){
@@ -120,6 +154,13 @@ body {
   }
 }
 @media (max-width: 1024px){
+
+  .responsive-carousel-bloc-text{
+    min-width: 100%;
+  }
+  .responsive-footer-bloc{
+    align-items: center;
+  }
   .section-search{
     width: 80%;
   }
@@ -132,15 +173,28 @@ body {
     justify-content: center;
   } 
   .padding-mobile-bas-de-page{
-    padding: 10px;
+    padding: 0px;
+    padding-top: 10px;
   }
   .responsive-footer{
     display: flex;
    flex-direction: column;
   }
+  .responsive-carousel{
+  height: auto ;
+  flex-direction: column;
+ }
 }
 @media (max-width: 768px) {
- 
+  .img-yacht-noir-blanc, .img-bateau-croisiere-mer {
+    height: 50vh;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    min-height: 50vh;
+    min-width: 100%;
+    margin: 0px;
+}
   .search-h1{
     font-size: 2rem;
   }
@@ -148,6 +202,12 @@ body {
 .responsive-image-skew, .responsive-banniere-cruise-ship-ocean, .responsive-homme_equitation-bateau-mer{
   display: flex;
   flex-direction: column;
+  padding: 0px;
+ 
+}
+.img-Bateaux-blancs-ocean, .img-Homme-equitation-bateau-mer {
+  margin: 0px;
+margin-top: 10px;
 }
 }
 @media (max-width: 425px) {
