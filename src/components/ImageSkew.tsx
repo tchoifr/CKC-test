@@ -7,7 +7,7 @@ const ImageSkew = () => {
       <div className="flex justify-center items-end img-roche-brune-rivage">
         <div className="flex flex-col p-5">
           <p className="custom-color">LOREM IPSUM</p>
-          <h3 className="text-2xl">
+          <h3 className="text-2xl text-white">
             Lorem ipsum dolor sit amet, <br /> consectetur <br /> adipiscing
             elit.
           </h3>
@@ -16,7 +16,7 @@ const ImageSkew = () => {
       <div className="flex justify-center items-end img-bateau-blanc-ocean">
         <div className="flex flex-col p-5">
           <p className="custom-color">LOREM IPSUM</p>
-          <h3 className="text-2xl">
+          <h3 className="text-2xl text-white">
             Lorem ipsum dolor sit amet, <br /> consectetur <br /> adipiscing
             elit.
           </h3>
@@ -25,7 +25,7 @@ const ImageSkew = () => {
       <div className="flex  items-end justify-center img-plongeur">
         <div className="flex flex-col p-5">
           <p className="custom-color">LOREM IPSUM</p>
-          <h3 className="text-2xl">
+          <h3 className="text-2xl text-white">
             Lorem ipsum dolor sit amet, <br /> consectetur <br /> adipiscing
             elit.
           </h3>

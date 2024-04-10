@@ -42,12 +42,12 @@ const Carousel = () => {
           }`}
         >
           <div className="text-container">
-            <h3 className="font-bold text-3xl">Lorem ipsum</h3>
-            <p>Lorem ipsum | Lorem ipsum | 2018</p>
+            <h3 className="font-bold text-3xl text-white">Lorem ipsum</h3>
+            <p className="text-white">Lorem ipsum | Lorem ipsum | 2018</p>
             <div className="flex">
-              <p className="p-1">From</p>
+              <p className="p-1 text-white">From</p>
               <p className="p-1 custom-color">29.000.000 €</p>
-              <p className="p-1">per week</p>
+              <p className="p-1 text-white">per week</p>
             </div>
           </div>
         </div>
@@ -58,12 +58,12 @@ const Carousel = () => {
           }`}
         >
           <div className="text-container">
-            <h3 className="font-bold text-3xl">Lorem ipsum</h3>
-            <p>Lorem ipsum | Lorem ipsum | 2018</p>
+            <h3 className="font-bold text-3xl text-white">Lorem ipsum</h3>
+            <p className="text-white">Lorem ipsum | Lorem ipsum | 2018</p>
             <div className="flex">
-              <p className="p-1">From</p>
+              <p className="p-1 text-white">From</p>
               <p className="p-1 custom-color">29.000.000 €</p>
-              <p className="p-1">per week</p>
+              <p className="p-1 text-white">per week</p>
             </div>
           </div>
         </div>

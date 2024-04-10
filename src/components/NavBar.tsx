@@ -36,12 +36,12 @@ const Navbar = () => {
         <h1 className="text-5xl font-signature ml-2">
           <a
             className="link-underline link-underline-black"
-            href=""
+            href="#"
             target="_blank"
             rel="noreferrer"
           >
             <Image
-              src="/logo-ckc-net.svg"
+              src="/assets/images/logo-ckc-net.svg"
               alt="Vercel Logo"
               width={250}
               height={30}
@@ -60,7 +60,7 @@ const Navbar = () => {
             className="nav-links cursor-pointer capitalize font-medium duration-200 link-underline"
           >
             <Link
-              href={link}
+              href="#"
               className="text-white hover:custom-color active:custom-color"
             >
               {link}
@@ -72,13 +72,13 @@ const Navbar = () => {
         <div className="flex items-center space-x-8">
           <button
             className="text-white w-57 h-57 color-btn-en "
-            style={{ padding: "10px 15px" }}
+            style={{ padding: "15px 20px" }}
           >
             EN
           </button>
           <button
-            className="text-white w-182 h-57 bg-custom-color"
-            style={{ padding: "10px 20px" }}
+            className="text-white w-182 h-57 bg-custom-color survol-btn"
+            style={{ padding: "15px 50px" }}
           >
             LOREM IPSUM
           </button>
@@ -98,7 +98,7 @@ const Navbar = () => {
               key={id}
               className="px-4 cursor-pointer capitalize py-6 text-3xl"
             >
-              <Link onClick={() => setNav(!nav)} href={link}>
+              <Link onClick={() => setNav(!nav)} href="#">
                 {link}
               </Link>
             </li>
@@ -108,13 +108,13 @@ const Navbar = () => {
           <div className="flex items-center space-x-8">
             <button
               className="text-white w-57 h-57 color-btn-en"
-              style={{ padding: "10px 15px" }}
+              style={{ padding: "15px 20px" }}
             >
               EN
             </button>
             <button
-              className="text-white w-182 h-57 bg-custom-color"
-              style={{ padding: "10px 20px" }}
+              className="text-white w-182 h-57 bg-custom-color survol-btn"
+              style={{ padding: "15px 50px" }}
             >
               LOREM IPSUM
             </button>

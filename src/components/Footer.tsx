@@ -7,7 +7,7 @@ const Footer = () => {
     <div className="bg-white text-black p-10 responsive-footer flex justify-around ">
       <div className="flex flex-col items-center justify-center responsive-align-center">
         <Image
-          src="/logo-ckc-net.svg"
+          src="/assets/images/logo-ckc-net.svg"
           alt="Vercel Logo"
           width={250}
           height={30}

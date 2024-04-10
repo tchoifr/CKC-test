@@ -1,30 +1,42 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
+@font-face {
+  font-family: Poppins;
+  src: url("/assets/font/Poppins/Poppins-Medium.ttf");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: Poppins;
+  src: url("/assets/font/Poppins/Poppins-Bold.ttf");
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: Poppins;
+  src: url("/assets/font/Poppins/Poppins-Regular.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
 :root {
-  --foreground-rgb: 0, 0, 0;
+  --foreground-rgb: rgb(255, 255, 255);
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
   --custom-color: #EA516F; 
 
 }
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
-
 body {
   background-color: white; /* Couleur de fond de base en blanc */
   color: rgb(var(--foreground-rgb)); /* Couleur de texte */
-  
-   /* Dégradé linéaire */
+  font-family: "Poppins", sans-serif;
 }
-
+p{
+  letter-spacing: -1px;
+}
+h1,h2,h3,h4{
+  letter-spacing: -2px;
+}
 @layer utilities {
   .text-balance {
     text-wrap: balance;
@@ -44,7 +56,7 @@ body {
   font-size: 3rem;
 }
 .img-header , .img-Bateau-blanc-et-bleu{
-  background: rgba(0, 0, 0, 0.3) url(/Bateau-sur-plan-deau.webp);
+  background: rgba(0, 0, 0, 0.3) url(/assets/images/Bateau-sur-plan-deau.webp);
   height: 85vh;
   width: 100%;
   background-size: cover;
@@ -88,10 +100,10 @@ body {
   display: block;
 }
 
-
-.img-plongeur, .img-bateau-blanc-ocean, .img-roche-brune-rivage,.img-yacht-blanc-eau-calme{
+.img-yacht-blanc-eau-calme{
   background-position: center;
   background-size: cover;
+  background-blend-mode: darken;
   min-height: 450px;
 }
 .img-Bateaux-blancs-ocean,.img-Homme-equitation-bateau-mer{
@@ -100,35 +112,48 @@ body {
   background-size: cover;
   min-height: 400px;
 }
+
 .img-plongeur{
-  background-image: url(/Plongeur-dans-l_eau.webp);
+  background: rgba(2, 45,69, 0.5) url(/assets/images/Plongeur-dans-l_eau.webp);
+  background-blend-mode: darken;
+  background-position: center;
+  background-size: cover;
+  min-height: 450px;
 }
 .img-bateau-blanc-ocean{
-  background-image: url(/Bateaux-blancs-ocean.webp);
+  background: rgba(2, 45,69, 0.5) url(/assets/images/Bateaux-blancs-ocean.webp);
+  background-blend-mode: darken;
+  background-position: center;
+  background-size: cover;
+  min-height: 450px;
 }
 .img-roche-brune-rivage{
-  background-image: url(/Roches-brunes-rivage.webp);
+  background: rgba(2, 45,69, 0.5) url(/assets/images/Roches-brunes-rivage.webp);
+  background-blend-mode: darken;
+  background-position: center;
+  background-size: cover;
+  min-height: 450px;
 }
 .img-yacht-blanc-eau-calme{
-  background-image: url(/Yacht-blanc-eaux-calmes.webp);
+  background-image: url(/assets/images/Yacht-blanc-eaux-calmes.webp);
 }
 .img-Bateaux-blancs-ocean{
-  background-image: url(/Bateaux-blancs-ocean.webp);
+  background-image: url(/assets/images/Bateaux-blancs-ocean.webp);
 }
 .img-Homme-equitation-bateau-mer{
-  background-image: url(/Homme-equitation-bateau-mer.webp);
+  background-image: url(/assets/images/Homme-equitation-bateau-mer.webp);
 }
 .img-Bateau-blanc-et-bleu{
-  background-image: url(/Bateau-blanc-et-bleu.webp);
+  background-image: url(/assets/images/Bateau-blanc-et-bleu.webp);
 }
 .img-bateau-croisiere-mer{
-  background-image: url(/Bateau-croisiere-mer.webp);
+  background-image: url(/assets/images/Bateau-croisiere-mer.webp);
 }
 .img-yacht-noir-blanc{
-  background-image: url(/Photo-Yacht-Noir-Blanc.webp);
+  background-image: url(/assets/images/Photo-Yacht-Noir-Blanc.webp);
 }
 .img-cruise-ship-ocean{
-  background: rgba(0, 0, 0, 0.3) url(/Cruise-ship-ocean.webp);
+  background: rgba(2, 45,69, 0.5) url(/assets/images/Cruise-ship-ocean.webp);
   background-position: center;
   background-size: cover;
   background-blend-mode: darken;
@@ -152,7 +177,20 @@ body {
 }
 .rensponsive-text-bloc-equitation-bateau-mer{
   padding-left: 15%;
+}
 
+.survol-btn:hover{
+  background: transparent;
+  color: white;
+  border: 1px solid white;
+}
+.survol-btn-black:hover{
+  background: transparent;
+  color: black;
+  border: 1px solid black;
+}
+.responsive-container-search{
+  padding: 0px 20px;
 }
 /* Media query pour les écrans de taille maximale */
 @media (max-width: 1440px){

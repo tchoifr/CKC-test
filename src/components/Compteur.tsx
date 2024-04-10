@@ -22,7 +22,7 @@ const Compteur = () => {
           <CountUp
             end={345}
             duration={5}
-            className="custom-color font-bold text-6xl"
+            className="custom-color font-medium text-6xl"
           />
           <p className="custom-color font-normal">LOREM IPSUM</p>
         </div>
@@ -33,7 +33,7 @@ const Compteur = () => {
           <CountUp
             end={1289}
             duration={5}
-            className="custom-color font-bold text-6xl"
+            className="custom-color font-medium text-6xl"
           />
           <p className="custom-color font-normal">LOREM IPSUM</p>
         </div>
@@ -44,7 +44,7 @@ const Compteur = () => {
           <CountUp
             end={387}
             duration={5}
-            className="custom-color font-bold text-6xl"
+            className="custom-color font-medium text-6xl"
           />
           <p className="custom-color font-normal">LOREM IPSUM</p>
         </div>
@@ -55,7 +55,7 @@ const Compteur = () => {
           <CountUp
             end={2137}
             duration={5}
-            className="custom-color font-bold text-6xl"
+            className="custom-color font-medium text-6xl"
           />
           <p className="custom-color font-normal">LOREM IPSUM</p>
         </div>

@@ -8,13 +8,13 @@ const HommeEquitationBateauMer = () => {
     >
       <div className="img-Homme-equitation-bateau-mer flex flex-col justify-end p-5">
         <p className="custom-color">POSTED 10 MARCH 2023</p>
-        <h4 className="font-bold ">
+        <h4 className="font-bold text-white">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit.
         </h4>
       </div>
       <div className="img-Bateaux-blancs-ocean flex flex-col justify-end p-5">
         <p className="custom-color">POSTED 10 MARCH 2023</p>
-        <h4 className="font-bold ">
+        <h4 className="font-bold text-white ">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit.
         </h4>
       </div>
@@ -27,8 +27,8 @@ const HommeEquitationBateauMer = () => {
           Lorem ipsum <br /> dolor sit amet
         </h3>
         <button
-          className="text-white w-182 h-57 bg-custom-color p-3"
-          style={{ padding: "10px 20px", marginLeft: "10px" }}
+          className="text-white w-182 h-57 bg-custom-color p-3 survol-btn-black"
+          style={{ padding: "15px 50px", marginLeft: "10px" }}
         >
           LOREM IPSUM
         </button>

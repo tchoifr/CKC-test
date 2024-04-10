@@ -36,17 +36,17 @@ const Search = () => {
   };
   return (
     <div className="section-search">
-      <h1 className="search-h1 text-white p-2 font-normal text-medium text-3xl md:text-4xl lg:text-5xl leading-60 font-poppins tracking-wide">
+      <h1 className="search-h1 text-white p-2 text-medium text-3xl md:text-4xl lg:text-5xl pb-10 font-medium">
         Lorem ipsum dolor sit amet, consectetur adipiscing.{" "}
       </h1>
       <div className="flex flex-wrap">
         {[0, 1, 2].map((index) => (
           <button
             key={index}
-            className={`text-black w-182 h-57 bg-white border-custom-color hover:bg-custom-color active:bg-custom-color ${
-              selectedBtn === index ? "bg-custom-color" : ""
+            className={`text-black w-182 h-57 bg-white border-custom-color hover:bg-custom-color ${
+              selectedBtn === index ? "bg-custom-color text-white" : ""
             }`}
-            style={{ padding: "5px 20px" }}
+            style={{ padding: "10px 40px" }}
             onClick={() => handleButtonClick(index)}
           >
             LOREM IPSUM
@@ -56,13 +56,13 @@ const Search = () => {
 
       <div className="flex bg-white responsive-container-search justify-around">
         <div className="p-4 col-span-1">
-          <p className="text-black font-bold">Recherche</p>
+          <p className="text-black font-bold">Lorem ipsum</p>
           <input
             type="text"
-            placeholder="Rechercher par nom"
+            placeholder=""
             value={searchTerm}
             onChange={(e) => setSearchTerm(e.target.value)}
-            className="border border-gray-300 px-3 py-2 rounded-md input-text"
+            className=" bg-gray-100 px-3 py-2 rounded-md input-text"
           />
         </div>
         <div className="p-4 flex flex-col w-full">
@@ -129,7 +129,7 @@ const Search = () => {
         <div className="p-4 flex justify-center items-center">
           <button
             className="text-white w-182 bg-custom-color flex items-center justify-center "
-            style={{ padding: "20px 30px 20px 30px" }}
+            style={{ padding: "20px 40px 20px 40px" }}
             onClick={handleSearch}
           >
             <FaSearch style={{ fontSize: "1.2em" }} />
