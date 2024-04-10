@@ -28,7 +28,7 @@ const BasDePageImg = () => {
         </p>
         <button
           className="text-white bg-custom-color survol-btn"
-          style={{ padding: "15px 50px", minWidth: "220px" }}
+          style={{ padding: "15px 50px", minWidth: "220px", minHeight: "60px" }}
           onClick={handleButtonClick}
           onMouseEnter={handleButtonMouseEnter}
           onMouseLeave={handleButtonMouseLeave}

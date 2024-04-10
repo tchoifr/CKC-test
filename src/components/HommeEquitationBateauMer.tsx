@@ -34,16 +34,16 @@ const HommeEquitationBateauMer = () => {
         </h4>
       </div>
       <div className="flex flex-col justify-center items-start rensponsive-text-bloc-equitation-bateau-mer">
-        <p className="custom-color p-3">LOREM IPSUM</p>
+        <p className="custom-color pb-3">LOREM IPSUM</p>
         <h3
-          className="font-bold text-5xl p-3 text-mobile"
+          className="font-medium text-5xl text-mobile pb-3"
           style={{ color: "#022D45" }}
         >
           Lorem ipsum <br /> dolor sit amet
         </h3>
         <button
           className="text-white bg-custom-color survol-btn-black"
-          style={{ padding: "15px 50px", minWidth: "220px" }}
+          style={{ padding: "15px 50px", minWidth: "220px", minHeight: "60px" }}
           onClick={handleButtonClick}
           onMouseEnter={handleButtonMouseEnter}
           onMouseLeave={handleButtonMouseLeave}
