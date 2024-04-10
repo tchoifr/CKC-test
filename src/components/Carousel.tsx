@@ -14,21 +14,21 @@ const Carousel = () => {
 
   return (
     <div className="bg-gray-100 flex responsive-carousel">
-      <div className="flex justify-center items-center flex-col responsive-carousel-bloc-text">
+      <div className="flex justify-center items-start flex-col responsive-carousel-bloc-text pl-20">
         <p className="pb-3 custom-color">LOREM IPSUM</p>
         <h3
-          className="p-3 font-medium text-5xl text-mobile text-center"
+          className=" font-medium text-5xl text-mobile"
           style={{ color: "#022D45" }}
         >
           Lorem ipsum dolor sit amet
         </h3>
         <div className="flex">
-          <div className="bg-white p-3 m-3 mr-6 shadow-carousel">
+          <div className="bg-white p-3 mt-8 mr-6 shadow-carousel">
             <button className="text-3xl text-gray-500" onClick={handlePrevious}>
               &#8592;
             </button>
           </div>
-          <div className="bg-white p-3 m-3 ml-6 shadow-carousel">
+          <div className="bg-white p-3 mt-8 ml-6 shadow-carousel">
             <button className="text-3xl text-gray-500" onClick={handleNext}>
               &#8594;
             </button>
